@@ -1,5 +1,37 @@
 # effect
 
+## 4.0.2
+
+### Patch Changes
+
+- [#8760](https://github.com/Effect-TS/effect/pull/8760) [`467d3ac`](https://github.com/Effect-TS/effect/commit/467d3aceff3e8c98ba7dd4ffef9a267a8f14d105) Thanks @fubhy! - Include runtime layer errors in the result type of `AtomRuntime.subscriptionRef`.
+
+- [#8758](https://github.com/Effect-TS/effect/pull/8758) [`d0b3862`](https://github.com/Effect-TS/effect/commit/d0b3862b6525d09277b8fb48d981beb200ad09f5) Thanks @fubhy! - Fix `Channel.mapInput` data-last overload to preserve channel requirements and add the mapping function's requirements.
+
+- [#8742](https://github.com/Effect-TS/effect/pull/8742) [`4153144`](https://github.com/Effect-TS/effect/commit/4153144de56b785409efadae655b4889452d0e10) Thanks @wouter173! - Fix the data-last overload of `AsyncResult.flatMap` to correctly infer a changed success type.
+
+- [#8772](https://github.com/Effect-TS/effect/pull/8772) [`bd00773`](https://github.com/Effect-TS/effect/commit/bd00773b252970e576ffe0cce17b84c10ce3c81f) Thanks @juliusmarminge! - Read `HttpClientResponse.cookies` on platforms whose `Headers` has no `getSetCookie`, such as React Native, instead of throwing.
+
+- [#8759](https://github.com/Effect-TS/effect/pull/8759) [`44defad`](https://github.com/Effect-TS/effect/commit/44defad43f1f4c396fcd9373484be191506d7df8) Thanks @fubhy! - Fix `HttpServer` service `serve` to infer required services from the middleware-transformed app.
+
+- [#8767](https://github.com/Effect-TS/effect/pull/8767) [`98a5ed7`](https://github.com/Effect-TS/effect/commit/98a5ed7603de413c0939c9ae66503ebe462846cf) Thanks @fubhy! - Fix `HttpApiClient` and `AtomHttpApi` result types for union response modes while preserving decoded-only results when the mode is omitted.
+
+- [#8773](https://github.com/Effect-TS/effect/pull/8773) [`1f74b62`](https://github.com/Effect-TS/effect/commit/1f74b62b6c918bdea3e4416e701c490fcf6866ce) Thanks @juliusmarminge! - Add opt-in `allowSessionTermination` to `McpServer.layerHttp`. DELETE ends the session and interrupts its active requests; later requests with that session id return `404`.
+  
+  Fix an RPC cancellation race by registering request fibers before their handlers run.
+
+- [#8819](https://github.com/Effect-TS/effect/pull/8819) [`a3b4cf3`](https://github.com/Effect-TS/effect/commit/a3b4cf3e2b35b336d05116ec464c4883c7aaf878) Thanks @mikearnaldi! - Prevent message loss when `Queue.take`, `takeAll`, `takeN`, `takeBetween`, `poll`, and `clear` are interrupted at a scheduler yield.
+
+- [#8784](https://github.com/Effect-TS/effect/pull/8784) [`a84aa4e`](https://github.com/Effect-TS/effect/commit/a84aa4e863dd1f03cc1316e52357b689bad4bade) Thanks @fubhy! - Fix FiberHandle losing ownership of fibers started by a synchronous replacement finalizer.
+
+- [#8776](https://github.com/Effect-TS/effect/pull/8776) [`50a5686`](https://github.com/Effect-TS/effect/commit/50a5686ab6ab0627572ed86a34288560cb9f8321) Thanks @fubhy! - Fix `Effect.effectify` so throwing error mappers become defects instead of escaping asynchronous callbacks and leaving fibers suspended.
+
+- [#8825](https://github.com/Effect-TS/effect/pull/8825) [`90a1bae`](https://github.com/Effect-TS/effect/commit/90a1bae8987dfcf94db7302a109d48b3a3ce098c) Thanks @tim-smart! - Add configurable `pingInterval` and `pingTimeout` to RPC socket clients, counting any decoded server frame as liveness. Forward `retryPolicy` through `layerProtocolSocket`. The default ping interval and timeout remain 5 seconds.
+
+- [#8748](https://github.com/Effect-TS/effect/pull/8748) [`b1d200c`](https://github.com/Effect-TS/effect/commit/b1d200c40a1dad69def51ebdbf0a1a612a12b8ac) Thanks @gcanti! - Expose the selected tag property key through `tag` on schemas returned by `Schema.toTaggedUnion` and `Schema.TaggedUnion`, closes [#8681](https://github.com/Effect-TS/effect/issues/8681).
+
+- [#8764](https://github.com/Effect-TS/effect/pull/8764) [`1ba8521`](https://github.com/Effect-TS/effect/commit/1ba85215823b3ad9fe725619ecca4c2c39f3548b) Thanks @fubhy! - Fix the data-last `Sink.catchCause` overload to return the handler's error type instead of the original error type.
+
 ## 4.0.1
 
 ### Patch Changes

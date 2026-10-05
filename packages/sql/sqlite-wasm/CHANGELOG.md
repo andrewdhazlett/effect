@@ -1,5 +1,12 @@
 # @effect/sql-sqlite-wasm
 
+## 4.0.2
+
+### Patch Changes
+
+- Updated dependencies [[`467d3ac`](https://github.com/Effect-TS/effect/commit/467d3aceff3e8c98ba7dd4ffef9a267a8f14d105), [`d0b3862`](https://github.com/Effect-TS/effect/commit/d0b3862b6525d09277b8fb48d981beb200ad09f5), [`4153144`](https://github.com/Effect-TS/effect/commit/4153144de56b785409efadae655b4889452d0e10), [`bd00773`](https://github.com/Effect-TS/effect/commit/bd00773b252970e576ffe0cce17b84c10ce3c81f), [`44defad`](https://github.com/Effect-TS/effect/commit/44defad43f1f4c396fcd9373484be191506d7df8), [`98a5ed7`](https://github.com/Effect-TS/effect/commit/98a5ed7603de413c0939c9ae66503ebe462846cf), [`1f74b62`](https://github.com/Effect-TS/effect/commit/1f74b62b6c918bdea3e4416e701c490fcf6866ce), [`a3b4cf3`](https://github.com/Effect-TS/effect/commit/a3b4cf3e2b35b336d05116ec464c4883c7aaf878), [`a84aa4e`](https://github.com/Effect-TS/effect/commit/a84aa4e863dd1f03cc1316e52357b689bad4bade), [`50a5686`](https://github.com/Effect-TS/effect/commit/50a5686ab6ab0627572ed86a34288560cb9f8321), [`90a1bae`](https://github.com/Effect-TS/effect/commit/90a1bae8987dfcf94db7302a109d48b3a3ce098c), [`b1d200c`](https://github.com/Effect-TS/effect/commit/b1d200c40a1dad69def51ebdbf0a1a612a12b8ac), [`1ba8521`](https://github.com/Effect-TS/effect/commit/1ba85215823b3ad9fe725619ecca4c2c39f3548b)]:
+  - effect@4.0.2
+
 ## 4.0.1
 
 ### Patch Changes
